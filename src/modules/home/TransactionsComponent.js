@@ -65,13 +65,13 @@ const TransactionsComponent = (props) => {
   return (
     <Container>
       Transactions
-      <input
+      {/* <input
         placeholder="Search"
         onChange={(e) => {
           updateSearchText(e.target.value);
           filterData(e.target.value);
         }}
-      />
+      /> */}
       {filteredTransaction?.map((payload) => (
         <TransactionCell payload={payload} />
       ))}
